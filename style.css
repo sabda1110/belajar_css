@@ -1,15 +1,19 @@
-/* h1{font-family: Arial, Helvetica, sans-serif;
-    font-size: 100px;
-    font-variant: small-caps;
-    font-style: italic;
-   } */
+h1{color:blueviolet; /*memberikan warna pada kata*/
+   text-decoration:underline ;
+    }
 
-    /* lebih singkat urutan : 1.font-style
-                           2.font-variant
-                           3.font-weight
-                           4.font-size
-                           5.line-height
-                           6.font-family */
-                           
-   h1{font:italic normal bold 100px arial, sans-serif}
-   p{line-height: 20px;}
+p{text-align: justify; /*Peletakan kalimat*/
+  text-indent: 50px; /*memberikan indentitas paragraf awal*/
+  letter-spacing: none; /*mengatur antar huruf*/
+  word-spacing: 5px; /*menagaur jarak antar kata*/
+}
+
+a{text-decoration: none;}   /*Memberikan modifkasi pada gambar*/
+
+body{background-color:cyan;  /*Memberikan warna untuk background*/
+    background-image: url(gambar/bg.png); /*memberikan gambar untuk background*/
+    background-repeat: no-repeat; /*mengatur pengulangan gambar  */
+    background-position:left center ;} /*meletakan posisi gambar     */
+    
+
+    
