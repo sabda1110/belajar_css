@@ -1,19 +1,20 @@
-h1{color:blueviolet; /*memberikan warna pada kata*/
-   text-decoration:underline ;
-    }
+h1{color:blueviolet;}
 
-p{text-align: justify; /*Peletakan kalimat*/
-  text-indent: 50px; /*memberikan indentitas paragraf awal*/
-  letter-spacing: none; /*mengatur antar huruf*/
-  word-spacing: 5px; /*menagaur jarak antar kata*/
-}
+h2,h3{color:orange;} /*Bila ingin membuat style yang sama tetapi tag berbeda*/
 
-a{text-decoration: none;}   /*Memberikan modifkasi pada gambar*/
 
-body{background-color:cyan;  /*Memberikan warna untuk background*/
-    background-image: url(gambar/bg.png); /*memberikan gambar untuk background*/
-    background-repeat: no-repeat; /*mengatur pengulangan gambar  */
-    background-position:left center ;} /*meletakan posisi gambar     */
-    
+ol li a{color:palegreen;} /*Membuat style lebih spesifik dengan spasi .PEMBACAAN : Carikan a untuk di ubah didalm li dan didalam ol*/
+
+ul li a{color:purple;}
+
+#p1{color:blue;}/*Membuat css menggukana selektor id*/
+
+.p2{color:red;}/*Membuat css menggukana selektor class*/
+
+.tulisan-tebal{font-size: 20px;} /*Membuat css menggukana selektor class yang kedua */
+
+p.tulisan-tebal{color:chartreuse;}    /*Membuat css menggukana selektor class*/
+
+.p2.tulisan-tebal{letter-spacing: 20px;}/*Membuat css menggunakan selektor double class atau lebih spesifik*/
 
     
