@@ -1,20 +1,17 @@
-h1{color:blueviolet;}
+.pertama:{color:red;}
 
-h2,h3{color:orange;} /*Bila ingin membuat style yang sama tetapi tag berbeda*/
+.pertama:hover{font-style: italic;
+              font-size: 20px;}/*Beguna untuk ketika mouse di arahkan ke tag makan akan berubah*/
 
+.pertama:active{color: seagreen;} /*Ketika di klik makan akan berubah*/
 
-ol li a{color:palegreen;} /*Membuat style lebih spesifik dengan spasi .PEMBACAAN : Carikan a untuk di ubah didalm li dan didalam ol*/
+.pertama:visited{font-size: 50px;/*Ketikan halaman sudah pernah di kunjungin*/
+                  color:silver;}
 
-ul li a{color:purple;}
+li:first-child a{color:teal;} /*Merubah style dalam bungkusan pertama*/
 
-#p1{color:blue;}/*Membuat css menggukana selektor id*/
+li:last-child a{color:teal;} /*Merubah style dalam bungkusan Terahkir*/
+li:nth-child(3n+2) a{color:teal;} /*Merubah style dalam bungkusan sesuai ketentuan*/
 
-.p2{color:red;}/*Membuat css menggukana selektor class*/
-
-.tulisan-tebal{font-size: 20px;} /*Membuat css menggukana selektor class yang kedua */
-
-p.tulisan-tebal{color:chartreuse;}    /*Membuat css menggukana selektor class*/
-
-.p2.tulisan-tebal{letter-spacing: 20px;}/*Membuat css menggunakan selektor double class atau lebih spesifik*/
-
-    
+p:first-of-type{color:tomato;} /*Merubah style tag awal*/
+p:last-of-type{color:aqua;} /*Merubah style tag ahkir*/
