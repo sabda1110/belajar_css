@@ -1,17 +1,3 @@
-.pertama:{color:red;}
+ul#sarapan li {color:green;}
 
-.pertama:hover{font-style: italic;
-              font-size: 20px;}/*Beguna untuk ketika mouse di arahkan ke tag makan akan berubah*/
-
-.pertama:active{color: seagreen;} /*Ketika di klik makan akan berubah*/
-
-.pertama:visited{font-size: 50px;/*Ketikan halaman sudah pernah di kunjungin*/
-                  color:silver;}
-
-li:first-child a{color:teal;} /*Merubah style dalam bungkusan pertama*/
-
-li:last-child a{color:teal;} /*Merubah style dalam bungkusan Terahkir*/
-li:nth-child(3n+2) a{color:teal;} /*Merubah style dalam bungkusan sesuai ketentuan*/
-
-p:first-of-type{color:tomato;} /*Merubah style tag awal*/
-p:last-of-type{color:aqua;} /*Merubah style tag ahkir*/
+ul#sarapan li.favorit{color:greenyellow;}
