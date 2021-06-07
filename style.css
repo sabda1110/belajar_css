@@ -1,3 +1,10 @@
-ul#sarapan li {color:green;}
+.navigasi ol li{
+    background-color: darkblue;
+    width: 200px;
+    height: 200px;
+}
 
-ul#sarapan li.favorit{color:greenyellow;}
+.main img{
+    display: none;
+}
+
