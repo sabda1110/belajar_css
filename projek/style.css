@@ -54,10 +54,11 @@ table {
 body{
     font: 18px/28px arial, sans-serif;
     background-color: darkgrey;
+    background-image: url(../gambar/bg.png);
 }
 
 .container{
-    width: 800px;
+    width: 960px;
     margin: auto;
     background-color: white;
 }
@@ -91,7 +92,7 @@ body{
 
 .banner{
     width: auto;
-    height: 200px;
+    height: 300px;
     background-image: url(gambar/bg.png);
     background-size: cover;
     border-top:5px solid tomato ;
@@ -100,24 +101,52 @@ body{
     
     
 }
-.konten{
+.main{
     padding: 20px;
+    float: left;
+    width: 600px;
+    box-sizing: border-box;
 }
-.konten h2{
+.main h2{
     font-size: 28px;
     font-weight: bold;
 }
-.konten .penulis {
+.main .penulis {
     font-size: 12px;
     margin-top: -5px;
 }
-.konten .penulis a{
+.main .penulis a{
     color: tomato;
     text-decoration: none;
 }
-.konten p{
+.main p{
     margin-bottom: 10px;
     font-size: 16px;
+}
+
+.side{
+    float:left;
+    padding: 20px;
+    width: 300px;
+    box-sizing: border-box;
+}
+.side p{
+    font: 12px/18px arial;
+    color: dimgrey;
+}
+
+.side img{
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin: 10px;
+    box-sizing: border-box;
+    
+    
+}
+
+.side h3{
+    font-weight: bold;
 }
 
 .footer{
@@ -137,7 +166,20 @@ body{
 
 
 
+/* Clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
 
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
 
 
 
