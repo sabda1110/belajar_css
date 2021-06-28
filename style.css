@@ -1,74 +1,15 @@
-.container{
-      width: 800px;
-      margin: auto;
-      border: 1px solid black;
-      
+div{
+      width: 200px;
+      height: 200px;
 }
-.header{
-      padding: 5px;
-      background-color: springgreen;
-      
+.satu{
+      background-color: aqua;
 }
-
-.header ul li{
-      
-      display:inline-block;
+.dua{ 
+      background-color: blueviolet;
+      position: relative; /*Memmungkinkan kita untuk mengatur element tanpa menggangu element lain*/
+      top: 100px;
 }
-.header ul li a{
-      text-decoration: none;
-      color: salmon;
+.tiga{
+      background-color: crimson;
 }
-
-.kiri{
-      background-color: tomato;
-      text-align: center;
-      height: 300px;
-      width: 150px;
-      float:left;
-}
-.tengah{
-      background-color: violet;
-      text-align: center;
-      width: 500px;
-      height: 300px;
-      float:left;
-}
-.kanan{
-      background-color: yellow;
-      text-align: center;
-      width: 150px;
-      height: 300px;
-      float:left;
-}
-
-/* .clear{
-      clear: left;
-}menggunakan div.clear akan tetap merusak struktur program kita */
-
-
-/**
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    contenteditable attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that are clearfixed.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
- .cf:before,
- .cf:after {
-     content: " "; /* 1 */
-     display: table; /* 2 */
- }
- 
- .cf:after {
-     clear: both;
- }
- 
- /**
-  * For IE 6/7 only
-  * Include this rule to trigger hasLayout and contain floats.
-  */
- .cf {
-     *zoom: 1;
- /* } menggunakan micro clearfix */
