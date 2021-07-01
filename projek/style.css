@@ -57,10 +57,35 @@ body{
     background-image: url(../gambar/bg.png);
 }
 
+.top-bar{
+    position: fixed;
+    height: 40px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: cornflowerblue;
+    z-index: 1;
+    
+}
+
 .container{
     width: 960px;
     margin: auto;
     background-color: white;
+    margin-top: 80px;
+    position: relative;
+}
+
+.instagram{
+    width: 200px;
+    height: 200px;
+    background-image: url(gambar/instagram.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: absolute;
+    text-indent: -99999999px;
+    top: 0px;
+    right: -55px;
 }
 
 .header{
