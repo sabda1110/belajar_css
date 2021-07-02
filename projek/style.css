@@ -65,8 +65,20 @@ body{
     right: 0px;
     background-color: cornflowerblue;
     z-index: 1;
+    border-bottom:10px solid salmon;
     
 }
+.top-bar ul li {
+  display: inline-block;
+  margin: 10px 8px;
+  padding-left: 5px;
+}
+.top-bar a{
+    text-decoration: none;
+    color: black;
+}
+
+
 
 .container{
     width: 960px;
