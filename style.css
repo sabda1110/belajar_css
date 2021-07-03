@@ -1,13 +1,21 @@
-.kotak{
-      width: 300px;
-      height: 300px;
-      background-color: salmon;
-      margin:50px auto;
-      border-radius: 0 50% 0 50%;
-      overflow: hidden;
-      
+body{
+      background-image: url(gambar/bg.png);
 }
-.kotak img{
-      width: 300px;
-      height: 300px;
+
+.satu{
+      width: 200px;
+      height: 200px;
+      background-color: salmon;
+      
+      position: relative;
+}
+
+.dua{
+      width: 100px;
+      height: 100px;
+      background-color: slateblue;
+      opacity: 0.8; /*Child yang transparansi akan mewarisi opacity dari parent nya*/
+      position: absolute;
+      right: -50px;
+      bottom: -50px;
 }
