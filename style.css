@@ -1,42 +1,12 @@
-.satu{
-      width: 600px;
-      height: 300px;
-      margin:50px auto;
-      background-image: linear-gradient(to left top,rgba(255,0,0,0.5),rgba(0,0,255,0.5),rgba(0,255,0,1));
+@font-face{
+      font-family: "font1";
+      src: url(font/AlexBrush-Regular.ttf) format("truetype");
 }
 
-h2{
+
+h1{
+      font-size: 100px;
       text-align: center;
-      font-size: 40px;
-      padding-top: 100px;
-      color: cyan;
-      
-}
-.dua{
-      width: 300px;
-      height: 300px;
-      background-color: darkmagenta;
-      float: left;
-      
-}
-.tiga{
-      width: 600px;
-      height: 300px;
-      background-color: black;
-      float: right;
-      
-      
-      
-      
-}
-.empat{
-      width: 300px;
-      height: 300px;
-      background-color: darkmagenta;
-      
-      
-      
-}
-.contai{
-      clear: both;
+      font-family: "font1",arial;
+
 }
