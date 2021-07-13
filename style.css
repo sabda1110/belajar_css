@@ -1,12 +1,35 @@
-@font-face{
-      font-family: "font1";
-      src: url(font/AlexBrush-Regular.ttf) format("truetype");
+body{
+   height: 600px;
+}
+.dua{
+   position: fixed;
+   left: 15px;
+   right: 15px;
+   height: 100px;
+   top: 0px;
+   background-color: black;
+}
+.satu{
+   width: 300px;
+   height: 300px;
+   margin: auto;
+   border: 5px solid black;
+   overflow: hidden;
+   margin-top: 100px;
+   z-index: 2;
+   box-shadow: 5px 5px 50px -8px green;
 }
 
 
-h1{
-      font-size: 100px;
-      text-align: center;
-      font-family: "font1",arial;
+img{
+   -ms-filter: drop-shadow(5px -5px 20px  black);
+   background-repeat: no-repeat;
+   filter: blur(20px);
+   
+   
+   
+}
 
+.satu:hover{
+   box-shadow: 5px 5px 50px -8px red;
 }
