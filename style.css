@@ -1,35 +1,38 @@
-body{
-   height: 600px;
+p{
+   font-size: 20px ;
+   text-align: center;
+   
 }
-.dua{
-   position: fixed;
-   left: 15px;
-   right: 15px;
-   height: 100px;
-   top: 0px;
-   background-color: black;
+
+.kotak{
+   width: 200px;
+   height: 200px;
+   background-color: aqua;
+   margin: 50px auto;
+   transition: 1s;
+   
 }
-.satu{
-   width: 300px;
+
+.kotak:hover{
+   /*
+   PENULISAN TRANSFORM
+    -Scale 
+     scale(x,y)|scaleX(angka)|scaleY(angka)
+    -Rotate
+     rotate(x,y)|roratetX(deg)|roratetY(deg)
+   -skew
+     skew(x,y)|skewX(deg)|skewY(deg)
+   -translate
+     translate(x,y)|translateX(px)|translateY(px) 
+     */
+   transform: translate(10px,5px);
+}
+
+
+.tes{
+   width: 600px;
    height: 300px;
-   margin: auto;
-   border: 5px solid black;
-   overflow: hidden;
-   margin-top: 100px;
-   z-index: 2;
-   box-shadow: 5px 5px 50px -8px green;
-}
-
-
-img{
-   -ms-filter: drop-shadow(5px -5px 20px  black);
-   background-repeat: no-repeat;
-   filter: blur(20px);
-   
-   
-   
-}
-
-.satu:hover{
-   box-shadow: 5px 5px 50px -8px red;
+   margin: 50px auto;
+   padding-left: 20px;
+   background-color: blue;
 }
