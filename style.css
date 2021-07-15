@@ -1,38 +1,46 @@
-p{
-   font-size: 20px ;
-   text-align: center;
+body{
+   margin: 0px;
+   padding: 0px;
+}
+
+.contai{
+   box-sizing: border-box;
+   width: 800px;
+   height: 240px;
+   border: 5px solid black;
+   margin:10px auto ;
    
 }
 
 .kotak{
-   width: 200px;
-   height: 200px;
+   width: 100px;
+   height: 100px;
    background-color: aqua;
-   margin: 50px auto;
-   transition: 1s;
+   margin: 10px;
+   text-align: center;
+   line-height: 100px;  
+}
+
+/*transition:Property [waktu] fungsi delay*/
+
+
+.kotak1{
+   transition: all 3s ease;
+}
+
+.kotak2{
+   transition: margin-left 3s , transform 3s 2s  ; /*Multiple transition*/
+}
+
+.contai:hover .kotak1{
+   transform: rotate(180deg);
+   margin-left: 680px;
    
 }
 
-.kotak:hover{
-   /*
-   PENULISAN TRANSFORM
-    -Scale 
-     scale(x,y)|scaleX(angka)|scaleY(angka)
-    -Rotate
-     rotate(x,y)|roratetX(deg)|roratetY(deg)
-   -skew
-     skew(x,y)|skewX(deg)|skewY(deg)
-   -translate
-     translate(x,y)|translateX(px)|translateY(px) 
-     */
-   transform: translate(10px,5px);
-}
-
-
-.tes{
-   width: 600px;
-   height: 300px;
-   margin: 50px auto;
-   padding-left: 20px;
-   background-color: blue;
+.contai:hover .kotak2{
+   transform: rotate(180deg);
+   margin-left: 680px;
+   background-color: salmon;
+   
 }
