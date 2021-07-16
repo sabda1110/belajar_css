@@ -1,46 +1,25 @@
-body{
-   margin: 0px;
-   padding: 0px;
-}
-
-.contai{
-   box-sizing: border-box;
-   width: 800px;
-   height: 240px;
-   border: 5px solid black;
-   margin:10px auto ;
-   
-}
-
 .kotak{
    width: 100px;
    height: 100px;
    background-color: aqua;
-   margin: 10px;
-   text-align: center;
-   line-height: 100px;  
+   animation: animasikotak 3s ease-in 5 alternate forwards;
 }
 
-/*transition:Property [waktu] fungsi delay*/
 
 
-.kotak1{
-   transition: all 3s ease;
-}
+@keyframes animasikotak{
+   0%{
+      width: 100px;
+      height: 100px;
+   }
+   20%{
+      margin-left: 50%;
+      border-top-left-radius: 50%;
+      border-bottom-right-radius: 50%;
+   }
 
-.kotak2{
-   transition: margin-left 3s , transform 3s 2s  ; /*Multiple transition*/
-}
-
-.contai:hover .kotak1{
-   transform: rotate(180deg);
-   margin-left: 680px;
-   
-}
-
-.contai:hover .kotak2{
-   transform: rotate(180deg);
-   margin-left: 680px;
-   background-color: salmon;
-   
+   100%{
+      background-color: brown;
+      margin-left: 50%;
+   }
 }
