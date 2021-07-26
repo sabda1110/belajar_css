@@ -1,170 +1,66 @@
-*{
-      margin: 0px;
-      padding: 0px;
+
+
+html,body{
+      margin: 0;
+      padding:0;
+      font-size:20px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+      text-transform: uppercase;
+      text-align: center;
 }
 
-body{
-font-family: Arial, Helvetica, sans-serif;
-margin-bottom: 1000px;
-background-color: #ddd;
-}
-
-.container-satu{
+.container{
       width: 800px;
       margin: 50px auto;
-      padding: 20px;
-      background-color: #fff;
+      border: 5px solid black;
       box-sizing: border-box;
-      line-height: 30px;
+      padding: 5px;
+      display: grid;
+      grid-template-areas: "header header"
+                           "aside main"
+                           "nav main"
+                           "footer footer"; /*Memberikan Grid*/
+      grid-template-columns: 1fr 1.5fr; /*mengatur Ukuran Kolom*/
+      grid-template-rows: 1fr 1fr 1.3fr; /*Mengatur Ukuran Baris*/
+
+}
+
+header{
+      grid-area: header;
+      background-color: blueviolet;
       display: flex;
-}
-/*Latihan Satu*/
-.container-satu .utama{
-flex: 2; /*Kegunaan Flex Mengatur Ukuran*/
-order: 2;
-}
-
-.container-satu .sidebar-satu{
-flex: 1;
-order: 1;
-}
-
-.container-satu .sidebar-dua{
-flex: 1;
-order: 3;
-margin-left: 10px;
-}
-.container-satu .sidebar-dua p{
-font-size: 15px;
-line-height: 20px;
-}
-
-
-/*Latihan 2*/
-
-.container-dua{
-      max-width: 800px;
-      margin:20px auto;
-      
-      
-
-}
-.layanan{
-     
-      padding: 20px;
-      box-sizing: border-box;
-      
-}
-
-.layanan.satu{
-      background-color: aqua;
-}
-.layanan.dua{
-      background-color: chartreuse;
-}
-.layanan.tiga{
-      background-color: crimson;
-}
-
-
-/*Latihan 3*/
-
-.container-tiga{
-      max-width: 800px;
-      margin: 20px auto;
-      display: flex;
-      flex-wrap: wrap;
       justify-content: center;
+      align-content: center;
 }
 
-.thum{
-      width: 50%;
-      
+aside{
+      grid-area: aside;
+      background-color: #2F93FF;
+      padding: 60px 0;
 }
 
-
-.thum img{
-      width: 100%;
+nav{
+      grid-area: nav;
+      background-color: #E45765;
+      padding: 100px o;
 }
 
-
-
-/*Latihan Empat*/
-.container-empat{
-
-      margin: 50px auto;
-     
-}
-
-.container-empat .card{
-      border: 2px solid black;
-      border-radius: 10px;
-      background-color: rgb(236, 231, 231);
-      overflow: hidden;
-      margin: 10px;
-      flex:1;
-      flex-wrap: wrap;
-}
-.container-empat .card .header{
-      height: 150px;
-      background-color: #666;
-      
-}
-
-.container-empat .card .isi{
-      text-align: center;
-      padding: 20px;
-}
-
-
-.container-empat .card.besar{
-      transform: scale(1.12);
-}
-
-
-/* Latihan Lima */
-.container-lima{
-      width: 500px;
-      height: 500px;
-      margin: 50px auto;
-      border:2px solid black;
+main{
+      grid-area: main;
+      background-color: #E0AA77;
+      box-sizing: border-box;
       display: flex;
+      justify-content: center;
+      align-content: center;
+
 }
 
-.container-lima .kotak{
-      width: 100px;
-      height: 100px;
-      background-color: brown;
-      margin: auto;
-      text-align: center;
-      display: flex;
-}
+footer{
+      grid-area: footer;
+ background-color: #666;
+ padding: 20px 0;
 
-.container-lima span{
-      margin: auto;
-}
-
-
-
-
-
-
-/*Responsiv*/
-@media(min-width:600px){
-.container-dua{
-      display: flex;
-      justify-content: space-between;
-}
-.layanan{
-      width: 250px;
-}
-.thum{
-      width: 25%;
-}
-.container-empat{
-      max-width: 800px;
-      display: flex;
-}
 }
 
 
