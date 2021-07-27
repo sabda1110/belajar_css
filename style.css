@@ -1,67 +1,26 @@
-
-
-html,body{
-      margin: 0;
-      padding:0;
-      font-size:20px;
-      font-family: Arial, Helvetica, sans-serif;
-      color: white;
-      text-transform: uppercase;
-      text-align: center;
-}
-
 .container{
-      width: 800px;
+      width: 60%;
       margin: 50px auto;
-      border: 5px solid black;
+      padding: 10px;
       box-sizing: border-box;
-      padding: 5px;
       display: grid;
-      grid-template-areas: "header header"
-                           "aside main"
-                           "nav main"
-                           "footer footer"; /*Memberikan Grid*/
-      grid-template-columns: 1fr 1.5fr; /*mengatur Ukuran Kolom*/
-      grid-template-rows: 1fr 1fr 1.3fr; /*Mengatur Ukuran Baris*/
-
+      grid-template-rows:2fr 2fr; /*Menentukan banyak baris dan dipisahkan oleh spasis*/
+      grid-template-columns:1fr; /*Menentukan Banyak kolom dan di pisahkan oleh spasi*/
+      grid-auto-flow: column;  /*Bila ada Nilai Default Maka Dia akan mengarhkan menjadi colum atau baris*/
+      grid-auto-columns: 1fr; /*Bila Nilai tidak diberikan ukuran makan nilai default nya 1fr di bikin bisa saja lebih atau kurang tergantung nilai default yang diberikan*/
 }
 
-header{
-      grid-area: header;
-      background-color: blueviolet;
+.item{
+      background-color: aqua;
       display: flex;
       justify-content: center;
-      align-content: center;
+      align-items: center;
 }
 
-aside{
-      grid-area: aside;
-      background-color: #2F93FF;
-      padding: 60px 0;
+.item:nth-child(odd){
+      background-color: crimson;
 }
 
-nav{
-      grid-area: nav;
-      background-color: #E45765;
-      padding: 100px o;
-}
-
-main{
-      grid-area: main;
-      background-color: #E0AA77;
-      box-sizing: border-box;
-      display: flex;
-      justify-content: center;
-      align-content: center;
-
-}
-
-footer{
-      grid-area: footer;
- background-color: #666;
- padding: 20px 0;
-
-}
 
 
 
