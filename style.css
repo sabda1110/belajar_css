@@ -2,12 +2,17 @@
       margin: 20px auto;
       width: 80%;
       display: grid;
-      grid-template: [baris1-awal] 'header header header'2fr [baris1-ahkir baris2-awal]'footer footer footer'3fr / 1fr 1fr 2fr;
-      grid-auto-rows: 5fr;
+      grid-template-columns: repeat(3,2fr);
+      grid-template-rows: 2fr 3fr 4fr;
+      gap:5px 10px;
+     
 }
 
 .item{
       background-color: tomato;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 }
 .item:nth-child(odd){
       background-color: turquoise;
