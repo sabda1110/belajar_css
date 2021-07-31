@@ -1,52 +1,15 @@
 .container{
-      width: 80%;
       margin: 20px auto;
+      width: 80%;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-areas:
-                           'header header header'
-                           'navigasi navigasi navigasi'
-                           'main main main'
-                           'footer footer footer';
-      border: 3px solid black;
+      grid-template: [baris1-awal] 'header header header'2fr [baris1-ahkir baris2-awal]'footer footer footer'3fr / 1fr 1fr 2fr;
+      grid-auto-rows: 5fr;
 }
 
-.con{
-      height: 100px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+.item{
+      background-color: tomato;
 }
-
-.header{
-      grid-area: header;
-      background-color: aqua;
-      
+.item:nth-child(odd){
+      background-color: turquoise;
 }
-.navigasi{
-      grid-area: navigasi;
-      background-color: chartreuse;
-}
-.main{
-      grid-area: main;
-      background-color: slategrey;
-}
-.footer{
-      grid-area: footer;
-      background-color: darkslategrey;
-}
-
-@media(min-width:576px){
-      .container{
-            grid-template-areas:
-                           'header header header'
-                           'navigasi main main'
-                           'navigasi main main'
-                           'footer footer footer';
-      }
-}
-
-
-
-
 
