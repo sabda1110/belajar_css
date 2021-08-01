@@ -1,0 +1,160 @@
+/* Font */
+
+@font-face {
+    font-family:'spartan';
+    src: url(font/leaguespartan-bold-webfont.woff)format('woff');
+}
+
+
+
+
+.container{
+    max-width: 80%;
+    margin: 10px auto;
+    font-family: 'spartan','arial',sans-serif;
+    position: relative;
+}
+
+header{
+   width: 100%;
+   position: fixed;
+   margin: auto;
+   top: 0;
+   left: 0;
+   right: 0;
+   background-color:rgba(255,255,255, 0.75);
+}
+header img{
+ margin-left: 80px;
+}
+
+.navigasi{
+    text-align: right;
+    margin-top: -20px;
+    margin-right: 120px;
+    
+}
+
+.navigasi li{
+    display: inline-block;
+    margin-right: 10px;
+}
+.navigasi li a{
+    text-decoration: none;
+    color: black;
+
+}
+
+
+.main{
+    margin-top: 100px;
+    display: flex;
+}
+
+.main .chart h1{
+    line-height: 30px;
+    font-size: 34px;
+}
+
+.main .chart p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.main .chart h2{
+    border: 2px solid black;
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: #00d4ff;
+    box-shadow: 0 20px 5px -20px rgba(0,0,0, 0.75);
+}
+
+.main img{
+    margin-left: 50px;
+}
+
+.tools{
+    margin: 50px auto;
+    text-align: center;
+}
+
+
+
+.tools ul{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tools ul li{
+    display: inline-block;
+    opacity: .6;
+}
+
+.service{
+    width: 100%;
+    margin: 150px auto;
+    text-align: center;
+    
+}
+
+.service h1{
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+.service .contet{
+    display: flex;
+    justify-content: space-between;
+}
+
+.service .card{
+    width: 20%;
+    text-align: center;
+    line-height: 20px;
+    border: 1px solid black;
+    border-top-left-radius:20px ;
+    border-top-right-radius: 20px;
+    background-color: #ddd;
+    box-shadow: 0 20px 5px -20px rgba(0,0,0, 0.75);
+    box-sizing: border-box;
+}
+
+.service .card p{
+    font-size: 13px;
+}
+
+.service .card:hover{
+    border-bottom: 2px solid blueviolet;
+}
+
+
+.smart{
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+}
+
+.smart img{
+    width: 50%;
+    height: 350px;
+    border-top-right-radius: 50%;
+    border-top-left-radius:50%;
+    border-bottom-left-radius:50% ;
+    margin-right: 20px;
+}
+
+.smart .isi{
+width: 40%;
+text-align: center;
+margin-top: 20px;
+padding-top: 70px;
+}
+
+.smart .isi p{
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+
