@@ -1,20 +1,39 @@
 .container{
       margin: 20px auto;
       width: 80%;
+      height: 1200px;
       display: grid;
-      grid-template-columns: repeat(3,2fr);
-      grid-template-rows: 2fr 3fr 4fr;
-      gap:5px 10px;
+      grid-template-columns:100px 100px 100px;
+      grid-template-rows:120px 120px;
+      gap: 10px 10px;
+      justify-items:start;
+
+      
      
 }
 
 .item{
       background-color: tomato;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      height: 100px;
 }
-.item:nth-child(odd){
-      background-color: turquoise;
+
+.item.i1,
+.item.i2,
+.item.i3{
+width: 80px;
+
 }
+
+.item.i4,
+.item.i5,
+.item.i6{
+width: 50px;
+}
+
+.item.i7,
+.item.i8,
+.item.i9{
+width: 60px;
+}
+
 
