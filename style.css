@@ -4,9 +4,10 @@
       height: 1200px;
       display: grid;
       grid-template-columns:100px 100px 100px;
-      grid-template-rows:120px 120px;
+      grid-template-rows:120px 120px 120px;
       gap: 10px 10px;
-      justify-items:start;
+      align-items: center;
+      
 
       
      
@@ -14,26 +15,26 @@
 
 .item{
       background-color: tomato;
-      height: 100px;
+      width: 80px;
 }
 
 .item.i1,
 .item.i2,
 .item.i3{
-width: 80px;
+height: 80px;
 
 }
 
 .item.i4,
 .item.i5,
 .item.i6{
-width: 50px;
+height: 50px;
 }
 
 .item.i7,
 .item.i8,
 .item.i9{
-width: 60px;
+height: 60px;
 }
 
 
