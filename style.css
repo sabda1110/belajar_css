@@ -43,7 +43,7 @@ body {
   grid-row-start: -4;
   grid-row-end: -1; */
 
-  justify-self: center;
+  align-self: end;
 
   background-color: lightblue;
 }
